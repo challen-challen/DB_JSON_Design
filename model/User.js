@@ -24,7 +24,18 @@ const userSchema = new mongoose.Schema(
     ],
 
     // 랭킹을 위한 점수
-    score: {
+    // 📌 mongodb expire time(조사)
+    dailyScore: {
+      type: Number,
+      default: 0,
+    },
+
+    dailyScore: {
+      type: Number,
+      default: 0,
+    },
+
+    sumScore: {
       type: Number,
       default: 0,
     },
