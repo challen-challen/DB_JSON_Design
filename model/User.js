@@ -23,21 +23,91 @@ const userSchema = new mongoose.Schema(
       },
     ],
 
-    // 랭킹을 위한 점수
+    // 전체 랭킹을 위한 점수
     // 📌 mongodb expire time(조사)
-    dailyScore: {
-      type: Number,
-      default: 0,
+    allScore: {
+      dailyScore: {
+        type: Number,
+        default: 0,
+      },
+
+      monthlyScore: {
+        type: Number,
+        default: 0,
+      },
+
+      sumScore: {
+        type: Number,
+        default: 0,
+      },
     },
 
-    dailyScore: {
-      type: Number,
-      default: 0,
-    },
+    // 카테고리별 랭킹을 위한 점수
+    categoryScore: {
+      electricity: {
+        dailyScore: {
+          type: Number,
+          default: 0,
+        },
 
-    sumScore: {
-      type: Number,
-      default: 0,
+        monthlyScore: {
+          type: Number,
+          default: 0,
+        },
+
+        sumScore: {
+          type: Number,
+          default: 0,
+        },
+      },
+      traffic: {
+        dailyScore: {
+          type: Number,
+          default: 0,
+        },
+
+        monthlyScore: {
+          type: Number,
+          default: 0,
+        },
+
+        sumScore: {
+          type: Number,
+          default: 0,
+        },
+      },
+      airCondition: {
+        dailyScore: {
+          type: Number,
+          default: 0,
+        },
+
+        monthlyScore: {
+          type: Number,
+          default: 0,
+        },
+
+        sumScore: {
+          type: Number,
+          default: 0,
+        },
+      },
+      resource: {
+        dailyScore: {
+          type: Number,
+          default: 0,
+        },
+
+        monthlyScore: {
+          type: Number,
+          default: 0,
+        },
+
+        sumScore: {
+          type: Number,
+          default: 0,
+        },
+      },
     },
   },
 
