@@ -1,3 +1,6 @@
+import mongoose from "mongoose";
+import { postSchema } from "../model/Post";
+
 const userSchema = new mongoose.Schema(
   {
     // 닉네임
@@ -22,6 +25,22 @@ const userSchema = new mongoose.Schema(
         ref: "Post",
       },
     ],
+
+    // 유저가 올린 최신 글
+    latestPost: [postSchema],
+
+    // 유저가 좋아요 누른 글
+    likePost: [
+      {
+        type: mongoose.SchemaTypes.ObjectId,
+        ref: "Like",
+      },
+    ],
+
+    // 뱃지 이미지
+    badgeUrl: {
+      type: Array,
+    },
 
     // 전체 랭킹을 위한 점수
     // 📌 mongodb expire time(조사)

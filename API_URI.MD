@@ -68,3 +68,16 @@ sort = daily, monthly
 ### ✔ user 정보 가져오기
 - Method : GET
 - URL : `/api/mypage/:userId`
+
+### ✔ 마이 페이지 나의 피드 더보기를 눌렀을 때
+- Method : GET
+- URL : `/api/mypage/posts/:userId`
+
+
+
+### 고민해볼 것
+-  마이페이지 유저정보의 배지와 나의 뱃지는 다른것인지?
+-  게시글 올릴 때 닉네임 옆에 색깔로 구분하는 것은 무엇을 기준으로 할 지?
+-  postController postPost에서 카테고리 별 점수 inc하는 query 고민  
+-  db 일, 월 점수 초기화 되는 거 구현
+-  랭킹 페이지 정확하게 어떤 기능인지 논의
