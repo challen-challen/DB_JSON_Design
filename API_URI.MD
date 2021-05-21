@@ -16,20 +16,20 @@
 - URL : `/api/challen`
 
 ## 챌린지 페이지
-### ✔ 챌린지 바로가기 버튼을 눌렀을 때
+### ✔ 챌린지 피드 받아오기
 - Method: GET
 - URL: `/api/posts?categoty=${}&sort=${}&skip=${}`
 - 📌 query string 변수명<br>
 category = electricity, traffic, airCondition, resource
 sort = likes, latest
 
-- 📌 예시 (처음 page에 들어갔을 때)<br>
-`/api/posts?category=${electricity}?sort=${likes}`
-<br>
+### ✔ 챌린지 1개 받아오기
+- Method: GET
+- URL: `/api/challen/post/:postId`
 
 ### ✔ 챌린지 등록
 - Method : POST
-- URL : `/api/posts`
+- URL : `/api/challen/posts`
 - 📌 Form Data :
   ```json
   {
@@ -69,14 +69,9 @@ sort = likes, latest
 
 ### ✔ 랭킹페이지 눌렀을 때
 - Method: GET
-- URL: `/api/ranking/:userId?category=${}?sort=${}`
+- URL: `/api/ranking?monthlyCategory=${}&dailyCategory=${}`
 - 📌 query string 변수명<br>
 category = all(전체), electricity, traffic, airCondition, resource<br>
-sort = daily, monthly
-
-🤷 ♀️ 랭킹 카테고리 나누기(ui 고민하기)<br>
-🤷 ♀️ 배지 개수 고민하기
-
 
 ## 나의 페이지
 ### ✔ user 정보 가져오기
@@ -88,10 +83,10 @@ sort = daily, monthly
 - URL : `/api/mypage/posts/:userId`
 
 
-
 ### 고민해볼 것
 -  마이페이지 유저정보의 배지와 나의 뱃지는 다른것인지?
 -  게시글 올릴 때 닉네임 옆에 색깔로 구분하는 것은 무엇을 기준으로 할 지?
 -  postController postPost에서 카테고리 별 점수 inc하는 query 고민  
 -  db 일, 월 점수 초기화 되는 거 구현
 -  랭킹 페이지 정확하게 어떤 기능인지 논의
+-  pagination 구현
