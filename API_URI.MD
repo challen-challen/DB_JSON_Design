@@ -1,5 +1,15 @@
 # challen-challen API 명세
 
+## 로그인, 로그아웃
+
+### ✔ 네이버 로그인 버튼 눌렀을 때
+-  Method : GET
+-  URL : /api/naver
+
+✔ 로그아웃 버튼 눌렀을 때
+-  Method : GET
+-  URL : /api/logout
+
 ## 메인 페이지
 ### ✔ 메인 페이지에 들어갈 때 
 - Method: GET
@@ -8,7 +18,7 @@
 ## 챌린지 페이지
 ### ✔ 챌린지 바로가기 버튼을 눌렀을 때
 - Method: GET
-- URL: `/api/posts?categoty=${}?sort=${}`
+- URL: `/api/posts?categoty=${}&sort=${}&skip=${}`
 - 📌 query string 변수명<br>
 category = electricity, traffic, airCondition, resource
 sort = likes, latest
@@ -31,6 +41,10 @@ sort = likes, latest
       "content": "내용"
   }
   ```
+
+### 업로드 이미지
+- Method : POST
+- URL : `/api/posts/upload`
 
 ### ✔ 댓글 등록
 - Method : POST
