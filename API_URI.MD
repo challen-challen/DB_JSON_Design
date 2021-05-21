@@ -14,18 +14,18 @@
 ## 챌린지 페이지
 ### ✔ 챌린지 피드 받아오기
 - Method: GET
-- URL: `/api/posts?categoty=${}?sort=${}`
+- URL: `/api/challen/posts?category=${}?sort=${}`
 - 📌 query string 변수명<br>
 category = electricity, traffic, airCondition, resource
 sort = likes, latest
 
 ### ✔ 챌린지 1개 받아오기
 - Method: GET
-- URL: `/api/post/:postId`
+- URL: `/api/challen/post/:postId`
 
 ### ✔ 챌린지 등록
 - Method : POST
-- URL : `/api/posts`
+- URL : `/api/challen/posts`
 - 📌 Form Data :
   ```json
   {
