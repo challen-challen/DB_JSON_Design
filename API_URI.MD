@@ -56,7 +56,6 @@ sort = likes, latest
       "content": "내용"
   }
   ```
-
 ### ✔ 좋아요 등록
 - Method : POST
 - URL : `/api/like/:postId`
@@ -83,10 +82,15 @@ category = all(전체), electricity, traffic, airCondition, resource<br>
 - URL : `/api/mypage/posts/:userId`
 
 
-### 고민해볼 것
--  마이페이지 유저정보의 배지와 나의 뱃지는 다른것인지?
--  게시글 올릴 때 닉네임 옆에 색깔로 구분하는 것은 무엇을 기준으로 할 지?
--  postController postPost에서 카테고리 별 점수 inc하는 query 고민  
--  db 일, 월 점수 초기화 되는 거 구현
--  랭킹 페이지 정확하게 어떤 기능인지 논의
--  pagination 구현
+### 개선 방향
+
+- [ ] 개선4(문화를 어떻게 정착시킬지)
+- 랭킹 자랑하기 버튼 
+- 오늘 환경 운동 한 걸 인스타 스토리에 공유하기
+  >> 좋아요 개수, 탄소저감량(가능하다면)
+- 깃허브 잔디
+지속적인 참여를 인증할 수 있는 요소를 추가하면 어떨까?
+배지를 디벨롭할까?
+- 프로필 사진 기능
+- 탄소 저감량 측정
+메인페이지에 개인 온실가스 하루 배출량 대비 하루 저감량 보여주기
