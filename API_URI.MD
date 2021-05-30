@@ -30,7 +30,7 @@ sort = likes, latest
 ### ✔ 챌린지 등록
 - Method : POST
 - URL : `/api/challen/posts`
-- 📌 Form Data :
+- 📌 Json Data :
   ```json
   {
       "writer": "사용자 id",
@@ -49,7 +49,7 @@ sort = likes, latest
 ### ✔ 댓글 등록
 - Method : POST
 - URL : `/api/comment/:postid`
-- 📌 Form Data :
+- 📌 Json Data :
   ```json
   {
       "writer": "사용자 id",
