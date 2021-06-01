@@ -18,10 +18,10 @@
 ## 챌린지 페이지
 ### ✔ 챌린지 피드 받아오기
 - Method: GET
-- URL: `/api/posts?categoty=${}&sort=${}&skip=${}`
+- URL: `/api/posts?category=${}&sort=${}&skip=${}`
 - 📌 query string 변수명<br>
-category = electricity, traffic, airCondition, resource
-sort = likes, latest
+  - category = electricity, traffic, airCondition, resource
+  - sort = likes, latest
 
 ### ✔ 챌린지 1개 받아오기
 - Method: GET
@@ -68,6 +68,13 @@ sort = likes, latest
 - Method : POST
 - URL : `/api/posts/upload`
 
+### 탄소저감량 계산기
+- Method : GET
+- URL : `/api/calculator?category=${}&plan=${}&sparedTime${}`
+- 📌 query string 변수명<br>
+  - category = electricity, traffic, airCondition, resource
+  - plan = [참고](#-챌린지-등록)
+
 ### ✔ 댓글 등록
 - Method : POST
 - URL : `/api/comments`
@@ -104,7 +111,7 @@ sort = likes, latest
 - Method: GET
 - URL: `/api/ranking?monthlyCategory=${}&dailyCategory=${}`
 - 📌 query string 변수명<br>
-category = all(전체), electricity, traffic, airCondition, resource<br>
+  - category = all(전체), electricity, traffic, airCondition, resource<br>
 
 ## 나의 페이지
 ### ✔ user 정보 가져오기
