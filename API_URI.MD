@@ -38,7 +38,7 @@
       "fileUrl": "인증사진 url주소",
       "title": "제목",
       "plan": "실천 방안",
-      "sparedTime" : "절약한 시간(분)", // 자원, 교통 카테고리에는 X
+      "reducedCarbon" : "탄소저감량", // 선택
       "content": "내용",
   }
   ```
@@ -69,11 +69,14 @@
 - URL : `/api/posts/upload`
 
 ### 탄소저감량 계산기
+실천 방안, 카테고리, 절약 시간(분)을 이용하여 탄소저감량(mg)을 응답해주는 api
+카테고리가 traffic, resource라면 sparedTime을 입력하지 않아도 된다.
 - Method : GET
 - URL : `/api/calculator?category=${}&plan=${}&sparedTime${}`
 - 📌 query string 변수명<br>
   - category = electricity, traffic, airCondition, resource
   - plan = [참고](#-챌린지-등록)
+  - sparedTime = 절약 시간(분 단위)
 
 ### ✔ 댓글 등록
 - Method : POST
