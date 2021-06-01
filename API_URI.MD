@@ -37,10 +37,32 @@ sort = likes, latest
       "category": "카테고리 명",
       "fileUrl": "인증사진 url주소",
       "title": "제목",
-      "plan": "실행 방안",
-      "content": "내용"
+      "plan": "실천 방안",
+      "sparedTime" : "절약한 시간(분)", // 자원, 교통 카테고리에는 X
+      "content": "내용",
   }
   ```
+- 실천방안
+
+| 카테고리 | 실천방안 | request 값 |
+| :---: | :--- | :---: | 
+|**자원**| 종이타월 대신 개인 손수건 사용하기 | hanky | 
+|| 종이컵 대신 개인컵 사용하기 | tumbler
+|| 비닐봉투 대신 장바구니 사용하기 | basket
+|| 재활용이 가능한 유리병, 캔 등 분리배출하기 | recycle
+|| 물을 받아서 설거지 하기 | water |
+|**전자기기**|TV 사용 시간 줄이기|tv
+||세탁기 사용 시간 줄이기|washer
+||컴퓨터 사용 시간 줄이기|computer
+||전기밥솥 보온 시간 줄이기|cooker
+||전자레인지 사용 시간 줄이기|microwave
+|**교통**|가까운 거리는 도보나 자전거 이용|bicycle
+||승용차 대신 대중교통 이용|publicTransport
+|**냉난방**|에어컨 사용 시간 줄이기|aircon
+||선풍기 사용 시간 줄이기|fan
+||보일러 사용 시간 줄이기|Boiler
+||전기장판 사용 시간 줄이기|electricBlanket
+- [참조](http://www.kcen.kr/USR_main2016.jsp??=life/life04)
 
 ### 업로드 이미지
 - Method : POST
@@ -65,7 +87,7 @@ sort = likes, latest
 ### ✔ 좋아요 등록
 - Method : POST
 - URL : `/api/like`
-- 📌 Form Data :
+- 📌 Json Data :
   ```json
   {
       "postId": "post id",
