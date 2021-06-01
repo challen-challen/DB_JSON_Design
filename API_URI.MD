@@ -64,11 +64,17 @@ sort = likes, latest
 
 ### ✔ 좋아요 등록
 - Method : POST
-- URL : `/api/like/:postId`
+- URL : `/api/like`
+- 📌 Form Data :
+  ```json
+  {
+      "postId": "post id",
+  }
+  ```
 
 ### ✔ 좋아요 취소
 - Method : DELETE
-- URL : `/api/like/:postId`
+- URL : `/api/like?postId=${}`
 
 ## 랭킹 페이지
 
