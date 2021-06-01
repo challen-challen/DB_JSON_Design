@@ -48,14 +48,20 @@ sort = likes, latest
 
 ### ✔ 댓글 등록
 - Method : POST
-- URL : `/api/comment/:postid`
+- URL : `/api/comments`
 - 📌 Json Data :
   ```json
-  {
+  {   
+      "postId"
       "writer": "사용자 id",
       "content": "내용"
   }
   ```
+  
+ ### ✔ 댓글 삭제
+- Method : DELETE
+- URL : `/api/comments/commentId`
+
 ### ✔ 좋아요 등록
 - Method : POST
 - URL : `/api/like/:postId`
