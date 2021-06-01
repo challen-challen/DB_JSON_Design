@@ -68,7 +68,7 @@
 - Method : POST
 - URL : `/api/posts/upload`
 
-### 탄소저감량 계산기
+### ✔ 탄소저감량 계산기
 실천 방안, 카테고리, 절약 시간(분)을 이용하여 탄소저감량(mg)을 응답해주는 api<br>
 카테고리가 traffic, resource라면 sparedTime을 입력하지 않아도 된다.
 - Method : GET
