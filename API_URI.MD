@@ -39,6 +39,7 @@
       "title": "제목",
       "plan": "실천 방안",
       "reducedCarbon" : "탄소저감량", // 선택
+      "etcPlan": "실천방안 직접 입력",  // plan이 etc일 때만
       "content": "내용",
   }
   ```
@@ -51,17 +52,21 @@
 || 비닐봉투 대신 장바구니 사용하기 | basket
 || 재활용이 가능한 유리병, 캔 등 분리배출하기 | recycle
 || 물을 받아서 설거지 하기 | water |
+|| 기타 | etc |
 |**전자기기**|TV 사용 시간 줄이기|tv
 ||세탁기 사용 시간 줄이기|washer
 ||컴퓨터 사용 시간 줄이기|computer
 ||전기밥솥 보온 시간 줄이기|cooker
 ||전자레인지 사용 시간 줄이기|microwave
+|| 기타 | etc |
 |**교통**|가까운 거리는 도보나 자전거 이용|bicycle
 ||승용차 대신 대중교통 이용|publicTransport
+|| 기타 | etc |
 |**냉난방**|에어컨 사용 시간 줄이기|aircon
 ||선풍기 사용 시간 줄이기|fan
 ||보일러 사용 시간 줄이기|Boiler
 ||전기장판 사용 시간 줄이기|electricBlanket
+|| 기타 | etc |
 - [참조](http://www.kcen.kr/USR_main2016.jsp??=life/life04)
 
 ### 업로드 이미지
