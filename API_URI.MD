@@ -71,7 +71,9 @@
 
 ### 업로드 이미지
 - Method : POST
-- URL : `/api/posts/upload`
+- URL : `/api/challen/upload`
+- 📌 Form data
+  - name = images
 
 ### ✔ 탄소저감량 계산기
 실천 방안, 카테고리, 절약 시간(분)을 이용하여 탄소저감량(mg)을 응답해주는 api<br>
